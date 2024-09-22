@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.recibidor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: tomato;
+}
+
+.imagen {
+    width: 75%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    width: 55%;
+    padding: 15px;
+}
+
+.texto h2 {
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+}
+
+.texto p {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    padding-top: 30px;
+}
+
+header{
+background-color: #ffffff;
+}
+
+main{
+    background-color: #4713a8;
+
+}
+
+aside{
+    background-color: #ffffff;
+}
+footer{
+    background-color: #ffffff;
+}
+
+header h1{
+
+    color: black;
+}
+
+/* diseño responsivo con media queries */
+
+@media (max-width: 600px) {
+    body {
+        background: rgb(0, 0, 0);
+    }
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 0,5rem;
+        
+    }
+    }
+
+@media (min-width: 600px) {
+/* body {
+    background: rgba(150, 53, 53, 0.332);
+} */
+
+#container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 10fr 2fr;
+    height: 100vh;
+    gap: 10px;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    grid-area: cabeza;
+}
+main {
+    margin-left: 1rem;
+    grid-area: principal;
+}
+aside {
+    margin-right: 1rem;
+    grid-area: lado;
+}
+footer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    grid-area: pie;
+}
+h1{
+    font-size: 20px;
+}
+body {
+    background: rgb(255, 255, 255);
+}
+}
+
+.carteles {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cartel {
+    display: inline-block;
+    border-radius: 15px;
+    width: 550px;
+    height: 750px; 
+}
+
+.cartel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cartel1 :hover {
+    content: url( img/editorialtexto.jpg);
+}
+/*Botones*/
+
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+.botones2 {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 550px;
+    height: 550px; 
+    transition: transform 0.3s ease;
+}
+
+.botones2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.botones2:hover {
+    transform: scale(105%); 
+}
+
+.botones2:hover img {
+    transform: scale(105%);
+}
+
+.boton1 img {
+    content: url(img/Ilustraciones.jpg);
+}
+
+.boton1:hover img {
+    content: url(img/ilustracionestexto.jpg);
+}
+
+.boton2 img {
+    content: url(img/Editorial.jpg);
+}
+
+.boton2:hover img {
+    content: url(img/editorialtexto.jpg);
+}
+
+.boton3 img {
+    content: url(img/cartel.jpg);
+}
+
+.boton3:hover img {
+    content: url(img/Carteltexto.jpg);
+}
+
+.botonindex {
+    margin-top: 70px;
+}
+
+.botonindex a {
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
