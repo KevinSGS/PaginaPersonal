@@ -6,10 +6,74 @@
 h1{
     font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
     padding: 1rem;
     color: rgb(0, 0, 0);
+}
+
+/*Index*/
+
+.index {
+    background-color: #000000;
+    border-radius: 15px;
+}
+
+.asdindex{
+    background-color: #000000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.asdindex h1{
+    color: #ffffff;
+}
+
+.asdindex p{
+    color: #ffffff;
+}
+aside h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+
+}
+
+.RS {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Acercademtext {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.Acercademimg {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-top: 40px;
+}
+
+.acercap {
+    margin-top: 30px;
+    padding: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .recibidor{
@@ -17,7 +81,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     margin: 20px;
-    background-color: tomato;
+    background-color: rgb(255, 255, 255);
 }
 
 .imagen {
@@ -51,32 +115,11 @@ h1{
     font-weight: 450;
     font-style: normal;
     padding-top: 30px;
+    padding-bottom: 70px;
 }
 
-header{
-background-color: #ffffff;
-}
-
-main{
-    background-color: #4713a8;
-
-}
-
-aside{
-    background-color: #ffffff;
-}
-footer{
-    background-color: #ffffff;
-}
-
-header h1{
-
-    color: black;
-}
-
-/* diseño responsivo con media queries */
-
-@media (max-width: 600px) {
+ 
+@media (max-width: 768px) {
     body {
         background: rgb(0, 0, 0);
     }
@@ -86,14 +129,105 @@ header h1{
         grid-template-rows: auto 1fr auto;
         height: 100vh;
         gap: 0,5rem;
-        
     }
+    
+    .recibidor {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        height: 100vh;
     }
 
+    .imagen, .texto {
+        width: 100%;
+    }
+
+    .texto h2 {
+        font-size: 100px;
+    }
+
+    .texto p {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .botonindex a {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-top: 5rem;
+    }
+
+    .botones2 {
+        width: 50px;
+        height: 30px; 
+        transition: transform 0.3s ease;
+    }
+
+    .botones2 img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .botones2do {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .carteles {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .ilustraciones {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+
+/*general*/
+
+header{
+background-color: #ffffff;
+}
+
+main{
+    background-color: #ffffff;
+
+}
+
+aside{
+    background-color: #ffffff;
+}
+
+footer{
+    background-color: #ffffff;
+}
+
+header h1{
+
+    color: black;
+}
+
+
 @media (min-width: 600px) {
-/* body {
-    background: rgba(150, 53, 53, 0.332);
-} */
 
 #container{
     display: grid;
@@ -135,6 +269,11 @@ body {
 }
 }
 
+ /*Carteles*/
+
+ .Bcartel {
+    background-color: #000000;
+ }
 .carteles {
     display: flex;
     gap: 20px;
@@ -144,8 +283,8 @@ body {
 .cartel {
     display: inline-block;
     border-radius: 15px;
-    width: 550px;
-    height: 750px; 
+    width: 440px;
+    height: 680px; 
 }
 
 .cartel img {
@@ -155,7 +294,54 @@ body {
 }
 
 .cartel1 :hover {
-    content: url( img/editorialtexto.jpg);
+    content: url( img/carteles/texto1.jpg);
+}
+
+.cartel2 :hover {
+    content: url( img/carteles/texto2.jpg);
+}
+
+.cartel3 :hover {
+    content: url( img/carteles/texto3.jpg);
+}
+
+.cartel4 :hover {
+    content: url( img/carteles/texto4.jpg);
+}
+
+.cartel5 :hover {
+    content: url( img/carteles/texto5.jpg);
+}
+
+.cartel6 :hover {
+    content: url( img/carteles/texto6.jpg);
+}
+
+.cartel7 :hover {
+    content: url( img/carteles/texto7.jpg);
+}
+
+/*Ilustraciones*/
+
+.ilustraciones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ilustracion {
+    display: inline-block;
+    border-radius: 15px;
+    width: 440px;
+    height: 680px; 
+    display: flex;
+    justify-content: center;
+}
+
+.ilustracion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /*Botones*/
 
@@ -163,8 +349,14 @@ body {
     display: flex;
     gap: 20px;
     justify-content: center;
-    padding: 1rem;
     padding-top: 5rem;
+}
+
+.botones2do {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .botones2 {
@@ -216,7 +408,7 @@ body {
 }
 
 .botonindex {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .botonindex a {
@@ -224,12 +416,12 @@ body {
     background-color: #000000;
     color: white;
     padding: 15px 30px;
-    font-size: 24px;
+    font-size: 30px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
